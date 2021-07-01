@@ -196,8 +196,6 @@ Add a filter for **Service name**, and then select **sql database** in the drop-
   >[!NOTE]
   > Meters are only visible for counters that are currently in use. If a counter is not available, it is likely that the category is not currently being used. For example, managed instance counters will not be present for customers who do not have a managed instance deployed. Likewise, storage counters will not be visible for resources that are not consuming storage. 
 
-For more information, see [Azure SQL Database cost management](cost-management.md).
-
 ## Encrypted backups
 
 If your database is encrypted with TDE, backups are automatically encrypted at rest, including LTR backups. All new databases in Azure SQL are configured with TDE enabled by default. For more information on TDE, see  [Transparent Data Encryption with SQL Database & SQL Managed Instance](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql).
@@ -215,6 +213,10 @@ All database backups are taken with the CHECKSUM option to provide additional ba
 When you migrate your database from a DTU-based service tier to a vCore-based service tier, the PITR retention is preserved to ensure that your application's data recovery policy isn't compromised. If the default retention doesn't meet your compliance requirements, you can change the PITR retention period. For more information, see [Change the PITR backup retention period](#change-the-pitr-backup-retention-period).
 
 [!INCLUDE [GDPR-related guidance](../../../includes/gdpr-intro-sentence.md)]
+
+## Restore points available
+
+
 
 ## Change the PITR backup retention period
 
